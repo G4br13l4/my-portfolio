@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.scss';
-import FixedNavbar from './components/FixedNavbar';
+import FixedNavbar from './components/shared/FixedNavbar';
 
 function App() {
   return (
     <div className="content-wrap">
       
       <FixedNavbar/>
-      <header id="start"></header>
+      <header id="intro" class="intro">
+
+      </header>
       <div id="projects"></div>
       <div id="about"></div>
       <div id="contact"></div>
