@@ -1,9 +1,18 @@
-@import "./styles/shared/FixedNavbar.scss";
+@import "./styles/FixedNavbar.scss";
+@import "./styles/Intro.scss";
 
-.intro {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(./images/space.jpg);
-  background-size: cover;
-  background-position: center;
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+  
+/* Hide scrollbar for IE and Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+#projects {
+    width: 100vw;
+    height: 100vh;
+    background: #464159;
 }

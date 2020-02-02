@@ -1,0 +1,43 @@
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/space.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  &__boxtxt {
+    background: orchid;
+    width: 75vw;
+    margin-left: 10%;
+  }
+
+  &__text {
+    font-size: 1.6em;
+    span {
+      display: block;
+    }
+    .name {
+      font-family: 'RobotoCondensed-Bold';
+    }
+    .anim-text::before {
+      content: 'desarrollo front-end';
+      animation: animate 8s 2s infinite;
+      -webkit-animation: animate 8s 2s infinite; /* Safari 4.0 - 8.0 */
+    }
+    @keyframes animate {
+      0% { content: 'desarrollo front-end';}
+      25% { content: 'analítica web';}
+      50% { content: 'marketing digital';}
+      75% { content: 'prototipos';}
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes animate {
+      0% { content: 'desarrollo front-end';}
+      25% { content: 'analítica web';}
+      50% { content: 'marketing digital';}
+      75% { content: 'prototipos';}
+    }
+  }
+}

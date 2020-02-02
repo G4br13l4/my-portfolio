@@ -1,14 +1,26 @@
 $hamburger-speed: 1s;
 
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -moz-transform: $property;
+  transform: $property;
+}
+
+@mixin transition($properties) {
+  -webkit-transition: $properties;
+  transition: $properties;
+}
+
 .main-nav {
   background: black;
+  background: 'base.$prueba';
   width: 100vw;
   height: 8vh;
   position: fixed;
   top:0;
   left: 0;
-  -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
-  transition: height 2s;
+  @include transition(height 2s);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -31,7 +43,7 @@ $hamburger-speed: 1s;
     position: relative;
     margin-right: 3%;
     i{
-      transition-duration: $hamburger-speed;
+      @include transition($hamburger-speed);
       width: 26px;
       height: 2px;
       background-color: white;
@@ -41,7 +53,6 @@ $hamburger-speed: 1s;
     }
 
     i:nth-of-type(1) {
-      transition-duration: $hamburger-speed;
       top: 16px;
     }    
   }
@@ -67,20 +78,12 @@ $hamburger-speed: 1s;
   height: 33vh;
   .main-nav__hamburger {
     i {
-      transition-duration: $hamburger-speed;
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+      @include transform(rotate(-45deg));
       top:8px;
     }
     
     i:nth-of-type(1) {
-      transition-duration: $hamburger-speed;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      transform: rotate(45deg);
+      @include transform(rotate(45deg));
       top:8px;
     }
   }
