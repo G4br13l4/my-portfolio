@@ -18,15 +18,15 @@ class Intro extends React.Component {
     }
 
     componentDidMount() {
-        setInterval(this.change, 2500);
+        setInterval(this.change, 4000);
     }
   
     change = () => {
         this.setState({showText: false});
 
         setTimeout(() => {
-            this.setState({skill: skills[counter]});
             this.setState({showText: true});
+            this.setState({skill: skills[counter]});
             counter++;
             if (counter >= skills.length) {
                 counter = 0;
@@ -43,7 +43,7 @@ class Intro extends React.Component {
                         <span>Hola, mi nombre es </span>
                         <strong className="name">Gabriela López Fuentes</strong>
                         <span>Me dedico a</span>
-                        <span className={`anim-text ${showText ? 'show' : 'hide'}`}>
+                        <span className={`${showText ? 'show' : 'hide'}`}>
                             {skill}
                         </span>
                     </h1>

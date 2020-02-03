@@ -23,10 +23,10 @@
       font-family: 'RobotoCondensed-Bold';
     }
 
-    
+    //Animation Skills
     .show {
         opacity: 1;
-        transition: opacity 0.5s;
+        transition: opacity 1s ease-in;
     }
     .hide {
         opacity: 0;
