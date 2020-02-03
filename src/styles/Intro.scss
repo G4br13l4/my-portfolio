@@ -23,34 +23,15 @@
       font-family: 'RobotoCondensed-Bold';
     }
 
-    .anim-text::before {
-      white-space: nowrap;
-      content: 'desarrollo front-end';
-      -webkit-animation: changeTxt 16s infinite; 
-      animation: changeTxt 16s infinite; 
-
-      @-webkit-keyframes animate {
-        20% { content: 'desarrollo front-end'; margin-left: 0%;}
-        30% { margin-left: 110vw;}
-        40% { content: 'analítica web'; margin-left: 0%;}
-        50% { margin-left: 110vw;}
-        60%{ content: 'marketing digital'; margin-left: 0%;}
-        70%{ margin-left: 110vw;}
-        80%{ content: 'prototipos'; margin-left: 0%;}
-        90% { margin-left: 110vw;}
-      }
-
-      @keyframes changeTxt {
-        20% { content: 'desarrollo front-end'; margin-left: 0%;}
-        30% { margin-left: 110vw;}
-        40% { content: 'analítica web'; margin-left: 0%;}
-        50% { margin-left: 110vw;}
-        60%{ content: 'marketing digital'; margin-left: 0%;}
-        70%{ margin-left: 110vw;}
-        80%{ content: 'prototipos'; margin-left: 0%;}
-        90% { margin-left: 110vw;}
-      }  
+    
+    .show {
+        opacity: 1;
+        transition: opacity 0.5s;
     }
+    .hide {
+        opacity: 0;
+    }
+    
 
   }
 }
