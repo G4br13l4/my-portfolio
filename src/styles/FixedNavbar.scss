@@ -97,11 +97,16 @@ $hamburger-speed: 1s;
 
     &__item{
       margin-bottom: 3%;
-      animation-fill-mode: forwards;
-      animation: mymove 5s;
+      animation: beVisible 5s forwards;
+      -webkit-animation: beVisible 5s forwards;
     }
 
-    @keyframes mymove {
+    @keyframes beVisible {
+      from {color: transparent;}
+      to {color: white;}
+    }
+
+    @-webkit-keyframes beVisible {
       from {color: transparent;}
       to {color: white;}
     }

@@ -8,36 +8,49 @@
   display: flex;
   align-items: center;
   &__boxtxt {
-    background: orchid;
-    width: 75vw;
-    margin-left: 10%;
+    width: 80vw;
+    margin-left: 10vw;
   }
 
   &__text {
     font-size: 1.6em;
+
     span {
       display: block;
     }
+
     .name {
       font-family: 'RobotoCondensed-Bold';
     }
+
     .anim-text::before {
+      white-space: nowrap;
       content: 'desarrollo front-end';
-      animation: animate 8s 2s infinite;
-      -webkit-animation: animate 8s 2s infinite; /* Safari 4.0 - 8.0 */
+      -webkit-animation: changeTxt 16s infinite; 
+      animation: changeTxt 16s infinite; 
+
+      @-webkit-keyframes animate {
+        20% { content: 'desarrollo front-end'; margin-left: 0%;}
+        30% { margin-left: 110vw;}
+        40% { content: 'analítica web'; margin-left: 0%;}
+        50% { margin-left: 110vw;}
+        60%{ content: 'marketing digital'; margin-left: 0%;}
+        70%{ margin-left: 110vw;}
+        80%{ content: 'prototipos'; margin-left: 0%;}
+        90% { margin-left: 110vw;}
+      }
+
+      @keyframes changeTxt {
+        20% { content: 'desarrollo front-end'; margin-left: 0%;}
+        30% { margin-left: 110vw;}
+        40% { content: 'analítica web'; margin-left: 0%;}
+        50% { margin-left: 110vw;}
+        60%{ content: 'marketing digital'; margin-left: 0%;}
+        70%{ margin-left: 110vw;}
+        80%{ content: 'prototipos'; margin-left: 0%;}
+        90% { margin-left: 110vw;}
+      }  
     }
-    @keyframes animate {
-      0% { content: 'desarrollo front-end';}
-      25% { content: 'analítica web';}
-      50% { content: 'marketing digital';}
-      75% { content: 'prototipos';}
-    }
-    /* Safari 4.0 - 8.0 */
-    @-webkit-keyframes animate {
-      0% { content: 'desarrollo front-end';}
-      25% { content: 'analítica web';}
-      50% { content: 'marketing digital';}
-      75% { content: 'prototipos';}
-    }
+
   }
 }
