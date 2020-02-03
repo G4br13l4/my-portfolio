@@ -1,5 +1,10 @@
 $hamburger-speed: 1s;
 
+$xs-devices: 450px;
+$s-devices: 600px;
+$m-devices: 768px;
+$l-devices: 992px;
+
 @mixin transform($property) {
   -webkit-transform: $property;
   -ms-transform: $property;
@@ -12,6 +17,7 @@ $hamburger-speed: 1s;
   transition: $properties;
 }
 
+//MOBILE FIRST
 .main-nav {
   background: black;
   background: 'base.$prueba';
@@ -113,13 +119,13 @@ $hamburger-speed: 1s;
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: $m-devices){
   .showMenu { 
     height: 38vh;
   }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: $l-devices){
   .main-nav {
     align-items: center;
     &__wrap-hamburger {

@@ -1,4 +1,9 @@
+$xs-devices: 450px;
+$s-devices: 600px;
+$m-devices: 768px;
+$l-devices: 992px;
 
+//MOBILE FIRST
 .intro {
   width: 100vw;
   height: 100vh;
@@ -7,13 +12,15 @@
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+  
   &__boxtxt {
     width: 80vw;
-    margin-left: 10vw;
+    white-space: nowrap;
   }
 
   &__text {
-    font-size: 1.6em;
+    font-size: 1.9em;
 
     span {
       display: block;
@@ -21,17 +28,49 @@
 
     .name {
       font-family: 'RobotoCondensed-Bold';
+      color:#6915CF;
+      font-size: 1.05em;
+      text-shadow: 5px 5px 5px #143143;
     }
 
     //Animation Skills
     .show {
+        text-shadow: 5px 5px 5px #143143;
         opacity: 1;
         transition: opacity 1s ease-in;
     }
     .hide {
         opacity: 0;
+    } 
+  }
+}
+
+@media only screen and (min-width: $s-devices) {
+  .intro {
+    &__text {
+      font-size: 2.4em;
     }
     
+  }
+}
 
+@media only screen and (min-width: $m-devices) {
+  .intro {
+    &__text {
+      .name { display: block;}
+      span:nth-of-type(2),
+      span:nth-of-type(3) {
+        display: inline-block;
+        margin-right: 0.3em;
+      } 
+    }
+  }
+}
+
+@media only screen and (min-width: $l-devices) {
+  .intro {
+    &__text {
+      font-size: 3em;
+    } 
   }
 }
