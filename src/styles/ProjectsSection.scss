@@ -29,7 +29,8 @@ $l-devices: 992px;
       height: 24vh;
       border-radius: 5px;
       background-size: cover;
-      background-repeat: no-repeat;  
+      background-repeat: no-repeat; 
+      background-position: center; 
       margin-bottom: 5%;
       position: relative;
 
@@ -115,7 +116,6 @@ $l-devices: 992px;
       margin-left: 5%;
       box-sizing: border-box;
       font-size: 1.05em;
-      background-position: center;
     }
   }
 }

@@ -3,6 +3,7 @@ import './App.scss';
 import FixedNavbar from './components/FixedNavbar';
 import Intro from './components/Intro';
 import ProjectsSection from './components/ProjectsSection';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
       <FixedNavbar />
       <Intro />
       <ProjectsSection />
-      <div id="about"></div>
-      <div id="contact"></div>
+      <Contact />
+      {/* <div id="about"></div> */}
     </div>
   );
 }

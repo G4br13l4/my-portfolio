@@ -76,7 +76,13 @@ $l-devices: 992px;
   }
 
   &__item {
-    color: white;
+    a {
+      height: 100%;
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
   }
 } 
 
@@ -104,8 +110,10 @@ $l-devices: 992px;
 
     &__item{
       margin-bottom: 3%;
-      animation: beVisible 5s forwards;
-      -webkit-animation: beVisible 5s forwards;
+      a {
+        animation: beVisible 5s forwards;
+        -webkit-animation: beVisible 5s forwards;
+      }
     }
 
     @keyframes beVisible {

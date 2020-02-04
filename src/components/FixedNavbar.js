@@ -28,16 +28,16 @@ class FixedNavbar extends React.Component {
                 <div className="nav-collapse">
                     <ul className="nav-collapse__list">
                         <li className="nav-collapse__item">
-                            <a className="nav-collapse__link">Inicio</a>
+                            <a href="#intro" onClick={this.toggleHamburger} className="nav-collapse__link">Inicio</a>
                         </li>
                         <li className="nav-collapse__item">
-                            <a className="nav-collapse__link">Proyectos</a>
+                            <a href="#projects" onClick={this.toggleHamburger} className="nav-collapse__link">Proyectos</a>
                         </li>
-                        <li className="nav-collapse__item">
+                        {/* <li className="nav-collapse__item">
                             <a className="nav-collapse__link">Acerca de mí</a>
-                        </li>
+                        </li> */}
                         <li className="nav-collapse__item">
-                            <a className="nav-collapse__link">Contacto</a>
+                            <a href="#contact" onClick={this.toggleHamburger} className="nav-collapse__link">Contacto</a>
                         </li>
                     </ul>
                 </div>
