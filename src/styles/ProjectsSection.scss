@@ -1,3 +1,8 @@
+$xs-devices: 450px;
+$s-devices: 600px;
+$m-devices: 768px;
+$l-devices: 992px;
+
 .projects {
     width: 100vw;
     box-sizing: border-box;
@@ -16,8 +21,7 @@
 
     &__web {
       display: flex;
-      flex-direction: column;
-      
+      flex-direction: column; 
     }
 
     .frame-project {
@@ -41,7 +45,7 @@
         box-sizing: border-box;
         padding: 4% 5%;
 
-        div { margin-bottom: 4%;}
+        div { margin-bottom: 10%;}
 
         &__title {
           display: flex;
@@ -70,7 +74,58 @@
       margin-bottom: 0;
     } 
 
-    #pokedex {
-      background-image: url('../images/pokemon.jpg');
+    #pokedex {background-image: url('../images/pokemon.jpg');}
+    #giphybox {background-image: url('../images/giphybox.jpg');}
+    #puzzlegame {background-image: url('../images/puzzlegame.jpg');}
+    #starwars {background-image: url('../images/starwars.jpg');}
+    #speligro {background-image: url('../images/speligro.jpg');}
+}
+
+@media only screen and (min-width: $xs-devices) {
+  .projects {
+    .frame-project {
+      height: 29vh;
     }
+  }
+}
+
+@media only screen and (min-width: $s-devices) {
+  .projects {
+    .frame-project {
+      height: 38vh;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media only screen and (min-width: $m-devices) {
+  .projects {
+    &__title { font-size: 1.8em;}
+    &__web {
+      display: flex;
+      flex-direction: row; 
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 80vw;
+    }
+    .frame-project {
+      width: 36vw;
+      height: 30vh;
+      margin-bottom: 5%;
+      margin-left: 5%;
+      box-sizing: border-box;
+      font-size: 1.05em;
+      background-position: center;
+    }
+  }
+}
+
+@media only screen and (min-width: $l-devices) {
+  .projects {
+    .frame-project {
+      width: 25vw;
+      margin-left: 2%;
+      font-size: 1em;
+    }
+  }
 }

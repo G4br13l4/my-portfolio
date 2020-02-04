@@ -19,30 +19,38 @@ class ProjectsSection extends React.Component {
                     <Project
                         name='Pokedex'
                         idCSS='pokedex'
-                        tools='CSS3, Bootstrap 3, Javascript, jQuery, PokeApi.'
+                        tools='CSS3, Bootstrap 3, Javascript, jQuery, PokeApi API.'
                         linkCode='https://open.spotify.com/collection/tracks'
                         linkDemo='https://open.spotify.com/collection/tracks'
                     />
-                    {/* <div className="frame-project">
-                    <div className="project">
-                    The Giphy Box
-                    </div>
-                    </div>
-                    <div className="frame-project">
-                    <div className="project">
-                        Puzzle Game
-                    </div>
-                    </div>
-                    <div className="frame-project">
-                    <div className="project">
-                        Star Wars Cheat-sheet
-                    </div>
-                    </div>
-                    <div className="frame-project">
-                    <div className="project">
-                        Silvia Peligro
-                    </div>
-                    </div> */}
+                    <Project
+                        name='The Giphy Box'
+                        idCSS='giphybox'
+                        tools='CSS3, Bootstrap 3, Javascript, React, Giphy API.'
+                        linkCode='https://open.spotify.com/collection/tracks'
+                        linkDemo='https://open.spotify.com/collection/tracks'
+                    />
+                    <Project
+                        name='Puzzle Game'
+                        idCSS='puzzlegame'
+                        tools='CSS3, Javascript, React.'
+                        linkCode='https://open.spotify.com/collection/tracks'
+                        linkDemo='https://open.spotify.com/collection/tracks'
+                    />
+                    <Project
+                        name='Star Wars Cheat-sheet'
+                        idCSS='starwars'
+                        tools='CSS3, Javascript, React, Swapi API.'
+                        linkCode='https://open.spotify.com/collection/tracks'
+                        linkDemo='https://open.spotify.com/collection/tracks'
+                    />
+                    <Project
+                        name='Silvia Peligro'
+                        idCSS='speligro'
+                        tools='Prototipo hecho con Figma e InVision. Actualmente en etapa de desarrollo con React.'
+                        linkCode='https://open.spotify.com/collection/tracks'
+                        linkDemo='https://open.spotify.com/collection/tracks'
+                    />
                 </div>
                 </section>
             </div>
