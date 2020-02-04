@@ -8,27 +8,50 @@ function App() {
       
       <FixedNavbar />
       <Intro />
-      <div id="projects"></div>
+      <div id="projects" className="projects">
+        <div className="projects__wrap-title">
+          <div className="projects__title">Proyectos</div>
+        </div>
+        <section className="projects__wrapweb">
+          <div className="projects__web">
+            <div className="frame-project">
+              <div className="project">
+                <div className="project__title">
+                  <span>Pokedex</span>
+                </div>
+                <div>CSS3, Bootstrap 3, Javascript, jQuery, PokeApi.</div>
+                <div>
+                  <button>Code</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+            <div className="frame-project">
+              <div className="project">
+                The Giphy Box
+              </div>
+            </div>
+            <div className="frame-project">
+              <div className="project">
+                Puzzle Game
+              </div>
+            </div>
+            <div className="frame-project">
+              <div className="project">
+                Star Wars Cheat-sheet
+              </div>
+            </div>
+            <div className="frame-project">
+              <div className="project">
+                Silvia Peligro
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <div id="about"></div>
       <div id="contact"></div>
     </div>
-      // <div className="content-wrap">
-      //   <div className="fade-in">
-      //     <section className="page-section" id="about">
-      //       <div className="page-number">
-      //         <span>1</span>
-      //       </div>
-      //       <div>
-      //         <h1><span>Acerca de</span></h1>
-      //       </div>
-      //       <div>
-      //         <p>¡Hola! Soy Gabriela López, digital marketing analyst y front-end developer. 
-      //           Me interesa <span>palabras dinámicas</span>
-      //         </p>
-      //       </div>
-      //     </section>
-      //   </div>
-      // </div>
   );
 }
 
