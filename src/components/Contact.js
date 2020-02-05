@@ -14,7 +14,7 @@ class Contact extends React.Component {
         return (
             <div id="contact" className="contact">
                 <div className="contact__wrap-title">
-                    <div className="contact__title">Contáctame aquí ...</div>
+                    <div className="contact__title">Contáctame ...</div>
                 </div>
                 <section className="contact__content">
                 <div className="contact__wrap-icons">

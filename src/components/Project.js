@@ -22,7 +22,7 @@ class Project extends React.Component {
                         <span>{name}</span>
                     </div>
                     <div>{tools}</div>
-                    <div>
+                    <div className="project__wrap-btns">
                         <button>
                             <a target="_blank" href={linkCode}>Code</a>
                         </button>
