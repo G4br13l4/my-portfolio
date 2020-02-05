@@ -22,9 +22,8 @@ $l-devices: 992px;
     }
   
     &__content {
-      //background: yellow;
       width: 100%;
-      height: 40vh;
+      margin-bottom: 10%;
     }
   
     &__wrap-icons {
@@ -64,34 +63,48 @@ $l-devices: 992px;
 }
 
 @media screen and (min-width: $xs-devices){
-    .contact {
-        &__wrap-icons {
-            .wrap-icon { 
-              width: 32%;
-            }
-        }
-    }
+  .contact {
+      &__wrap-title {
+        margin: 4% 0;
+      }
+      &__content {
+        margin-bottom: 9%;
+      }
+      &__wrap-icons {
+          .wrap-icon { 
+            width: 21%
+          }
+      }
+  }
 }
 
 @media screen and (min-width: $s-devices){
-    .contact {
-        &__wrap-icons {
-            .wrap-icon { 
-              margin: 4% 0;
-            }
-        }
+  .contact {
+    &__wrap-title {
+      margin: 2% 0;
     }
+    &__content {
+      margin-bottom: 6%;
+    }
+    &__wrap-icons {
+      .wrap-icon { 
+        width: 19%;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: $m-devices){
     .contact {
-        &__title { font-size: 1.8em;}
+        &__wrap-title,
         &__content {
-            height: 27vh;
+          margin: 0;
         }
+        &__title { font-size: 1.8em;}
         &__wrap-icons {
             .wrap-icon { 
-              width: 24%;
+              width: 16%;
+              margin: 6% 0;
             }
         }
     }
@@ -103,12 +116,10 @@ $l-devices: 992px;
             text-align: center;
             margin: 1% 0;
         }
-        &__content {
-            height: 20vh;
-        }
         &__wrap-icons {
             .wrap-icon { 
               width: 11%;
+              margin: 4% 0;
             }
         }
     }
