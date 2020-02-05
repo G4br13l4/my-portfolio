@@ -4,8 +4,16 @@ class FixedNavbar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            openHamburger: false
+            openHamburger: false,
+            isMobile: true,
         };
+    }
+
+    componentDidMount() {
+        const deviceWidth = window.innerWidth;
+        if(deviceWidth > 992) {
+            this.setState({ isMobile: false});
+        }
     }
   
     toggleHamburger = () => {
@@ -14,8 +22,7 @@ class FixedNavbar extends React.Component {
     }
 
     render() {
-    
-        const { openHamburger } = this.state;
+        const { openHamburger, isMobile } = this.state;
         return (
             <nav className={`main-nav ${openHamburger ? 'showMenu' : 'hideMenu'}`}>
                 <div className="main-nav__wrap-hamburger">
@@ -28,16 +35,16 @@ class FixedNavbar extends React.Component {
                 <div className="nav-collapse">
                     <ul className="nav-collapse__list">
                         <li className="nav-collapse__item">
-                            <a className="nav-collapse__link">Inicio</a>
+                            <a href="#intro" onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Inicio</a>
                         </li>
                         <li className="nav-collapse__item">
-                            <a className="nav-collapse__link">Proyectos</a>
+                            <a href="#projects" onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Proyectos</a>
                         </li>
-                        <li className="nav-collapse__item">
+                        {/* <li className="nav-collapse__item">
                             <a className="nav-collapse__link">Acerca de mí</a>
-                        </li>
+                        </li> */}
                         <li className="nav-collapse__item">
-                            <a className="nav-collapse__link">Contacto</a>
+                            <a href="#contact" onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Contacto</a>
                         </li>
                     </ul>
                 </div>

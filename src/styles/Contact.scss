@@ -1,0 +1,115 @@
+$xs-devices: 450px;
+$s-devices: 600px;
+$m-devices: 768px;
+$l-devices: 992px;
+
+.contact {
+    width: 100vw;
+    background: rgb(7,12,35);
+    box-sizing: border-box;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  
+    &__wrap-title {
+      width: 80vw;
+      margin: 5% 0;
+    }
+    &__title {
+      font-size: 1.5em;
+    }
+  
+    &__content {
+      //background: yellow;
+      width: 100%;
+      height: 40vh;
+    }
+  
+    &__wrap-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .wrap-icon { 
+        width: 35%;
+        text-align: center;
+        margin: 7% 0;
+        &__link {
+          color: white;
+          opacity: 0.7;
+          &:hover {
+            opacity: 1;
+          }
+          svg {
+            font-size: 3em;
+          }
+        }
+      }
+    }
+  
+    .footer {
+      background: black;
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'RobotoCondensed-Light';
+      font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: $xs-devices){
+    .contact {
+        &__wrap-icons {
+            .wrap-icon { 
+              width: 32%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $s-devices){
+    .contact {
+        &__wrap-icons {
+            .wrap-icon { 
+              margin: 4% 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $m-devices){
+    .contact {
+        &__title { font-size: 1.8em;}
+        &__content {
+            height: 27vh;
+        }
+        &__wrap-icons {
+            .wrap-icon { 
+              width: 24%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $l-devices){
+    .contact {
+        &__wrap-title {
+            text-align: center;
+            margin: 1% 0;
+        }
+        &__content {
+            height: 20vh;
+        }
+        &__wrap-icons {
+            .wrap-icon { 
+              width: 11%;
+            }
+        }
+    }
+}
