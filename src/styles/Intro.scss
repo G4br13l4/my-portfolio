@@ -16,6 +16,7 @@ $l-devices: 992px;
   
   &__boxtxt {
     width: 80vw;
+    height: 45vh;
     white-space: normal;
   }
 
@@ -28,9 +29,8 @@ $l-devices: 992px;
 
     .name {
       font-family: 'RobotoCondensed-Bold';
-      color:#6915CF;
-      font-size: 1.05em;
-      text-shadow: 5px 5px 5px #143143;
+      color:#5918DF;
+      font-size: 1.1em;
     }
 
     //Animation Skills

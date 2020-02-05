@@ -48,7 +48,7 @@ $l-devices: 992px;
     width: 26px;
     height: 16px;
     position: relative;
-    margin-right: 3%;
+    margin-right: 4%;
     i{
       @include transition($hamburger-speed);
       width: 26px;
@@ -76,6 +76,9 @@ $l-devices: 992px;
   }
 
   &__item {
+    margin-bottom: 3%;
+    height: 5vh;
+    font-size: 1.2em;
     a {
       height: 100%;
       width: 100%;
@@ -150,6 +153,8 @@ $l-devices: 992px;
   
       &__item{
         margin-right: 6%;
+        margin-bottom: 0;
+        height: auto;
       }
     }
     
