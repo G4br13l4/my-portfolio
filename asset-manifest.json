@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.40472e04.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.dd6e9466.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.dd6e9466.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.d96a2d46.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.d96a2d46.js.map",
+    "static/js/2.c887c15f.chunk.js": "/my-portfolio/static/js/2.c887c15f.chunk.js",
+    "static/js/2.c887c15f.chunk.js.map": "/my-portfolio/static/js/2.c887c15f.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "precache-manifest.6a13029da32ee8d6723469c6f4cdcdea.js": "/my-portfolio/precache-manifest.6a13029da32ee8d6723469c6f4cdcdea.js",
+    "service-worker.js": "/my-portfolio/service-worker.js",
+    "static/css/main.40472e04.chunk.css.map": "/my-portfolio/static/css/main.40472e04.chunk.css.map",
+    "static/js/2.c887c15f.chunk.js.LICENSE": "/my-portfolio/static/js/2.c887c15f.chunk.js.LICENSE",
+    "static/media/index.css": "/my-portfolio/static/media/RobotoCondensed-Light.885e5558.ttf",
+    "static/media/RobotoCondensed-Regular.ttf": "/my-portfolio/static/media/RobotoCondensed-Regular.52ee8b59.ttf",
+    "static/media/App.scss": "/my-portfolio/static/media/starwars.03095e3a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d96a2d46.js",
+    "static/js/2.c887c15f.chunk.js",
+    "static/css/main.40472e04.chunk.css",
+    "static/js/main.dd6e9466.chunk.js"
+  ]
+}
